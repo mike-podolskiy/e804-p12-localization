@@ -14,10 +14,10 @@ public class LocalizedHello2 {
 
     public static void main(String args[]) {
         // print the largest box-office hit movie for default (US) locale
-        Locale locale = Locale.getDefault();
-        printMovieDetails(ResourceBundle.getBundle("ResBundle", locale));
+        Locale locale = new Locale("en", "US");
+        printMovieDetails(ResourceBundle.getBundle("kz.mix.e804.localization.resourcebundles.ResBundle", locale));
         // print the largest box-office hit movie for Italian locale
         locale = new Locale("it", "IT", "");
-        printMovieDetails(ResourceBundle.getBundle("ResBundle", locale));
+        printMovieDetails(ResourceBundle.getBundle("kz.mix.e804.localization.resourcebundles.ResBundle", locale));
     }
 }
