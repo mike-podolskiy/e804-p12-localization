@@ -3,9 +3,7 @@ package kz.mix.e804.localization.resourcebundles;
 
 import java.util.*;
 
-/**
- * Created by Podolskiy.Mikhail on 18.05.2016.
- */
+//run with following VM options: -Duser.language=it -Duser.region=IT
 public class LocalizedHello {
     public static void main(String args[]) {
         Locale currentLocale = Locale.getDefault();
