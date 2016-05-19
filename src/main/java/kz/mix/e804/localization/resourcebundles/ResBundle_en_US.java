@@ -3,6 +3,7 @@ package kz.mix.e804.localization.resourcebundles;
 
 import java.util.ListResourceBundle;
 
+// default US English version
 public class ResBundle_en_US extends ListResourceBundle {
     public Object[][] getContents() {
         return contents;
