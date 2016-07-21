@@ -18,6 +18,7 @@ package kz.mix.e804.localization.dateformat.simpledateformat;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 // Using an example, illustrates the use of "pattern strings" for printing dates
 public class CustomDatePatterns {
@@ -34,7 +35,7 @@ public class CustomDatePatterns {
                 DateFormat.getDateInstance().format(today));
         for(String dateFormat : dateFormats) {
             System.out.printf("Date in pattern \"%s\" is %s %n", dateFormat,
-                    new SimpleDateFormat(dateFormat).format(today));
+                    new SimpleDateFormat(dateFormat, Locale.US).format(today));
         }
     }
 }
